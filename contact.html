@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Fit2Fight</title>
+  <meta name="description" content="Schedule wellness exams for your fire department. Contact Fit2Fight for NFPA 1582-compliant physicals." />
+  <link rel="icon" href="../favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="navbar-logo"><img src="assets/logo.png" alt="Fit2Fight Logo" /></a>
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="statistics.html">Statistics</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="nav-cta">Schedule an Exam</a>
+      </div>
+      <button class="mobile-toggle" aria-label="Toggle menu">
+        <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+    <div class="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="statistics.html">Statistics</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="nav-cta">Schedule an Exam</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="page-hero">
+      <div class="deco deco-2"></div>
+      <div class="page-hero-content container">
+        <p class="section-label">Get In Touch</p>
+        <h1>Contact Us</h1>
+        <p>Ready to schedule wellness exams for your department? Reach out and we'll get you started.</p>
+        <div class="section-divider" style="margin-top:2rem"></div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="fade-up" style="padding:7rem 0;background:var(--background)">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Form -->
+          <div>
+            <h2 style="font-size:1.5rem;font-weight:700;color:var(--foreground);margin-bottom:1.5rem;font-family:'Montserrat',sans-serif">Send Us a Message</h2>
+            <form id="contact-form" novalidate>
+              <div class="honeypot" aria-hidden="true">
+                <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="name">Full Name <span class="required">*</span></label>
+                  <input type="text" id="name" class="form-input" placeholder="John Smith" maxlength="100" />
+                </div>
+                <div class="form-group">
+                  <label for="department">Department</label>
+                  <input type="text" id="department" class="form-input" placeholder="City Fire Department" maxlength="200" />
+                </div>
+              </div>
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" class="form-input" placeholder="(555) 123-4567" />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address <span class="required">*</span></label>
+                  <input type="email" id="email" class="form-input" placeholder="john@firedept.gov" maxlength="255" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message <span class="required">*</span></label>
+                <textarea id="message" class="form-textarea" placeholder="Tell us about your department's needs..." maxlength="2000"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-lg btn-accent">
+                <svg class="icon-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                Send Message
+                <svg class="icon-sm arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </button>
+            </form>
+          </div>
+
+          <!-- Sidebar -->
+          <div>
+            <div class="contact-info-card glow-primary">
+              <h3>Contact Information</h3>
+              <div class="contact-info-item">
+                <div class="ci-icon"><svg class="icon-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+                <div><p class="ci-label">Phone</p><p class="ci-value">(555) 123-4567</p></div>
+              </div>
+              <div class="contact-info-item">
+                <div class="ci-icon"><svg class="icon-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
+                <div><p class="ci-label">Email</p><p class="ci-value">info@fit2fight.org</p></div>
+              </div>
+              <div class="contact-info-item">
+                <div class="ci-icon"><svg class="icon-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                <div><p class="ci-label">Service Area</p><p class="ci-value">Nationwide</p></div>
+              </div>
+            </div>
+
+            <div class="response-card">
+              <div class="rc-header">
+                <svg class="icon-md" style="color:var(--accent)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <h3>Response Time</h3>
+              </div>
+              <p>We typically respond within 24 hours on business days. For urgent scheduling needs, please call us directly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-deco"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="Fit2Fight Logo" />
+          <p class="tagline">Keeping first responders fit to fight through comprehensive wellness exams and NFPA 1582-compliant physicals.</p>
+          <div class="motto"><svg class="icon-sm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg> Protecting Those Who Protect Us</div>
+        </div>
+        <div><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="statistics.html">Statistics</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+        <div><h4>Our Services</h4><ul class="footer-services"><li>Wellness Exams</li><li>NFPA 1582 Physicals</li><li>Mobile Lab Services</li><li>On-Site Examinations</li></ul></div>
+        <div><h4>Contact Us</h4><ul class="footer-contact"><li><div class="fc-icon"><svg class="icon-sm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><span>(555) 123-4567</span></li><li><div class="fc-icon"><svg class="icon-sm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div><span>info@fit2fight.org</span></li><li><div class="fc-icon"><svg class="icon-sm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div><span>Serving First Responders Nationwide</span></li></ul></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:0.5rem"><p>&copy; <span id="footer-year"></span> Fit2Fight.org. All rights reserved.</p><p class="motto">Keeping First Responders Fit to Fight</p></div></div>
+  </footer>
+
+  <div id="toast" class="toast">
+    <p class="toast-title"></p>
+    <p class="toast-desc"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
